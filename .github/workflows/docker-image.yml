@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t jesweb/docker-graphql:0.0.2 .
+        docker build -t jesweb/docker-graphql:latest
 
     - name: Push Docker Image
       run: |
         docker push jesweb/docker-graphql:0.0.2
+        docker push jesweb/docker-graphql:latest
